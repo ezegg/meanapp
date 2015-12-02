@@ -21,6 +21,11 @@ app.use(function  (req, res, next) {
 	next();
 });
 
+/*app.use('/hello',function  (req, res, next) {
+	res.send('hello');
+	next();
+});*/
+
 //connect to MongoDB
 mongoose.connect('mongodb://localhost/meanapp');
 mongoose.connection.once('open', function  () {
