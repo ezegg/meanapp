@@ -1,4 +1,4 @@
-var mogoose = require('mongoose');
+var mongoose = require('mongoose');
 
 
 //create movie schema

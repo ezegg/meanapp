@@ -29,6 +29,8 @@ app.use(function  (req, res, next) {
 //connect to MongoDB
 mongoose.connect('mongodb://localhost/meanapp');
 mongoose.connection.once('open', function  () {
+	//load the models
+	app.models = require('./models/index');
 	console.log('Listening on port 3000....');
 	app.listen(3000);
 })
